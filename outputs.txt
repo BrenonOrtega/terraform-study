@@ -1,0 +1,24 @@
+create dev-terraform-tofu user
+
+PS  C:\coding\concepts\terraform> 
+aws --endpoint-url=http://localhost:4566 iam create-user --user-name dev-terraform-tofu
+{
+    "User": {
+        "Path": "/",
+        "UserName": "dev-terraform-tofu",
+        "UserId": "p71lon01htmk7vd4mw9a",
+        "Arn": "arn:aws:iam::000000000000:user/dev-terraform-tofu",
+        "CreateDate": "2024-02-10T14:00:00.559000+00:00"
+    }
+}
+
+aws --endpoint-url=http://localhost:4566 iam create-access-key --user-name dev-terraform-tofu 
+{
+    "AccessKey": {
+        "UserName": "dev-terraform-tofu",
+        "AccessKeyId": "LKIAQAAAAAAAE74L4PUU",
+        "Status": "Active",
+        "SecretAccessKey": "FSmlBed6PckunkZbzzadhu+wZiCm2XLFoICwDTr0",
+        "CreateDate": "2024-02-10T14:02:47+00:00"
+    }
+}

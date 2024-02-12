@@ -1,0 +1,8 @@
+# To run aws commands pointing to localstack before setting directly in the config file
+aws --endpoint-url=http://localhost:4566
+
+# To ask terraform current state of a resource
+tofu state show <name of the resource here>
+
+# To ask terraform to show all resources created in current folder
+tofu state list
